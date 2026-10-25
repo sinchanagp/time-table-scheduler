@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications | Smart Time Table Scheduler</title>
+
+    <link rel="stylesheet" href="css/notifications.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     SIDEBAR
+========================= -->
+
+<div class="sidebar">
+
+    <h2>📅 Scheduler</h2>
+
+    <ul>
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="timetable.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                Timetable
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="notifications.html">
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </a>
+        </li>
+
+        <li>
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+
+<div class="main">
+
+    <header>
+
+        <div>
+
+            <h1>Notifications</h1>
+
+            <p>
+                Stay updated with your upcoming classes
+            </p>
+
+        </div>
+
+        <div class="notification-icon">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <span id="notificationCount">
+                0
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         NOTIFICATION PERMISSION
+    ========================= -->
+
+    <div class="permission-card">
+
+        <div>
+
+            <h2>
+                🔔 Class Reminders
+            </h2>
+
+            <p>
+                Allow browser notifications to receive
+                reminders 10 minutes before your class.
+            </p>
+
+        </div>
+
+        <button id="enableNotifications">
+
+            Enable Notifications
+
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         TEST NOTIFICATION
+    ========================= -->
+
+    <div class="test-card">
+
+        <div>
+
+            <h3>
+                🧪 Test Notification
+            </h3>
+
+            <p>
+                Use this button to check whether
+                browser notifications are working.
+            </p>
+
+        </div>
+
+        <button id="testNotification">
+
+            🔔 Test
+
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         TODAY'S NOTIFICATIONS
+    ========================= -->
+
+    <section class="notification-section">
+
+        <div class="section-header">
+
+            <h2>
+                Today's Schedule
+            </h2>
+
+            <span id="todayDate"></span>
+
+        </div>
+
+
+        <div id="notificationList">
+
+            <!-- Notifications will appear here -->
+
+            <div class="empty-message">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <p>
+                    Loading today's classes...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+
+<script src="js/notifications.js"></script>
+
+</body>
+
+</html>

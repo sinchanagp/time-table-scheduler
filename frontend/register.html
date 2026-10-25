@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Smart Time Table Scheduler</title>
+
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="register-box">
+
+            <h1>📅 Smart Time Table Scheduler</h1>
+            <h2>Create Account</h2>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Department</label>
+                    <input type="text" id="department" placeholder="AI & ML" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Semester</label>
+                    <select id="semester" required>
+                        <option value="">Select Semester</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Section</label>
+                    <input type="text" id="section" placeholder="A" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                </div>
+
+                <button type="submit">Create Account</button>
+
+                <p class="login-link">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

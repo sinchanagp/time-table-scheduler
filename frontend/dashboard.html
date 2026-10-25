@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Smart Time Table Scheduler</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>📅 Scheduler</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+        <li><a href="timetable.html"><i class="fa-solid fa-calendar-days"></i> Timetable</a></li>
+
+        <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
+
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+
+    </ul>
+
+</div>
+
+
+<div class="main-content">
+
+<header>
+
+<h1>Smart Time Table Scheduler</h1>
+
+<div>
+
+<span id="welcomeUser"></span>
+
+<button id="logoutBtn">Logout</button>
+
+</div>
+
+</header>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h2>📚 Today's Classes</h2>
+
+<h1>5</h1>
+
+</div>
+
+<div class="card">
+
+<h2>📖 Subjects</h2>
+
+<h1>8</h1>
+
+</div>
+
+<div class="card">
+
+<h2>⏰ Next Class</h2>
+
+<h1>DBMS</h1>
+
+<p>10:30 AM</p>
+
+</div>
+
+<div class="card">
+
+<h2>📈 Attendance</h2>
+
+<h1>82%</h1>
+
+</div>
+
+</div>
+
+
+<div class="quick">
+
+<h2>Quick Actions</h2>
+
+<div class="buttons">
+
+<button onclick="location.href='timetable.html'">
+
+➕ Add Timetable
+
+</button>
+
+<button onclick="location.href='timetable.html'">
+
+📅 View Timetable
+
+</button>
+
+<button onclick="location.href='notifications.html'">
+
+🔔 Notifications
+
+</button>
+
+<button onclick="location.href='profile.html'">
+
+👤 Profile
+
+</button>
+
+</div>
+
+</div>
+
+
+<div class="preview">
+
+<h2>Today's Schedule</h2>
+
+<table>
+
+<tr>
+
+<th>Time</th>
+
+<th>Subject</th>
+
+<th>Room</th>
+
+</tr>
+
+<tr>
+
+<td>09:00</td>
+
+<td>Artificial Intelligence</td>
+
+<td>A205</td>
+
+</tr>
+
+<tr>
+
+<td>10:00</td>
+
+<td>DBMS</td>
+
+<td>B102</td>
+
+</tr>
+
+<tr>
+
+<td>02:00</td>
+
+<td>Computer Vision</td>
+
+<td>C301</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

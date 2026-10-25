@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Timetable</title>
+
+    <link rel="stylesheet" href="css/timetable.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <h2>📅 Scheduler</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+        <li class="active"><a href="timetable.html"><i class="fa-solid fa-calendar-days"></i> Timetable</a></li>
+
+        <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
+
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+    <header>
+
+        <h1>Weekly Timetable</h1>
+
+        <button id="openPopup">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add New Class
+
+        </button>
+
+    </header>
+
+    <!-- Weekly Grid -->
+
+    <div class="table-container">
+
+    <table id="timetableTable">
+
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>08:00 - 09:00</th>
+                <th>09:00 - 10:00</th>
+                <th>10:00 - 10:30</th>
+                <th>10:30 - 11:30</th>
+                <th>11:30 - 12:30</th>
+                <th>12:30 - 13:30</th>
+                <th>13:30 - 14:30</th>
+                <th>14:30 - 15:30</th>
+                <th>15:30 - 16:30</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Monday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- Popup -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup">&times;</span>
+
+        <h2>Add New Class</h2>
+
+        <form id="timetableForm">
+
+            <select id="day" required>
+
+                <option value="">Select Day</option>
+
+                <option>Monday</option>
+
+                <option>Tuesday</option>
+
+                <option>Wednesday</option>
+
+                <option>Thursday</option>
+
+                <option>Friday</option>
+
+                <option>Saturday</option>
+
+            </select>
+
+            <input type="text" id="subject" placeholder="Subject" required>
+
+            <input type="text" id="faculty" placeholder="Faculty" required>
+
+            <input type="text" id="room" placeholder="Room" required>
+
+            <input type="time" id="startTime" required>
+
+            <input type="time" id="endTime" required>
+
+            <button type="submit">
+
+                Save Class
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/timetable.js"></script>
+
+</body>
+
+</html>

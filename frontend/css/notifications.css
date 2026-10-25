@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+body {
+
+    background: #eef3fb;
+
+    display: flex;
+
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+
+    width: 250px;
+
+    height: 100vh;
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    background: linear-gradient(
+        180deg,
+        #1565c0,
+        #0d47a1
+    );
+
+    color: white;
+
+    padding: 25px;
+
+}
+
+
+.sidebar h2 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.sidebar ul {
+
+    list-style: none;
+
+}
+
+
+.sidebar ul li {
+
+    margin: 18px 0;
+
+}
+
+
+.sidebar ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+    display: block;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+}
+
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+
+    background: white;
+
+    color: #1565c0;
+
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+
+    margin-left: 250px;
+
+    width: calc(100% - 250px);
+
+    padding: 35px;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+header h1 {
+
+    color: #1565c0;
+
+    font-size: 28px;
+
+}
+
+
+header p {
+
+    color: #777;
+
+    margin-top: 5px;
+
+}
+
+
+.notification-icon {
+
+    position: relative;
+
+    width: 55px;
+
+    height: 55px;
+
+    background: #1565c0;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+}
+
+
+#notificationCount {
+
+    position: absolute;
+
+    top: -5px;
+
+    right: -5px;
+
+    width: 22px;
+
+    height: 22px;
+
+    background: #e53935;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   PERMISSION CARD
+========================= */
+
+.permission-card {
+
+    margin-top: 30px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+.permission-card h2 {
+
+    color: #1565c0;
+
+    margin-bottom: 8px;
+
+}
+
+
+.permission-card p {
+
+    color: #666;
+
+}
+
+
+#enableNotifications {
+
+    background: #1565c0;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+#enableNotifications:hover {
+
+    background: #0d47a1;
+
+}
+
+
+/* =========================
+   TEST CARD
+========================= */
+
+.test-card {
+
+    margin-top: 20px;
+
+    background: #fff8e1;
+
+    border-left: 5px solid #ffb300;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.test-card h3 {
+
+    color: #e65100;
+
+}
+
+
+.test-card p {
+
+    color: #666;
+
+    margin-top: 5px;
+
+}
+
+
+#testNotification {
+
+    background: #ff9800;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+#testNotification:hover {
+
+    background: #ef6c00;
+
+}
+
+
+/* =========================
+   NOTIFICATION SECTION
+========================= */
+
+.notification-section {
+
+    margin-top: 30px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+.section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-header h2 {
+
+    color: #1565c0;
+
+}
+
+
+#todayDate {
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   NOTIFICATION ITEM
+========================= */
+
+.notification-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px;
+
+    border: 1px solid #e1e6ef;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+
+    transition: 0.3s;
+
+}
+
+
+.notification-item:hover {
+
+    background: #f5f9ff;
+
+    transform: translateX(5px);
+
+}
+
+
+.notification-item .icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    background: #e3f2fd;
+
+    color: #1565c0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 18px;
+
+}
+
+
+.notification-details {
+
+    flex: 1;
+
+}
+
+
+.notification-details h3 {
+
+    color: #333;
+
+    font-size: 16px;
+
+}
+
+
+.notification-details p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-top: 4px;
+
+}
+
+
+.notification-time {
+
+    color: #1565c0;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty-message {
+
+    text-align: center;
+
+    padding: 50px;
+
+    color: #999;
+
+}
+
+
+.empty-message i {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+    color: #90caf9;
+
+}
+
+
+.empty-message p {
+
+    color: #888;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+
+    body {
+
+        display: block;
+
+    }
+
+
+    .main {
+
+        margin-left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+    }
+
+
+    header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+
+    .permission-card,
+    .test-card {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+}
