@@ -150,7 +150,7 @@ form.addEventListener("submit", async (e) => {
         if (editId) {
 
             response = await fetch(
-                `http://localhost:5000/api/timetable/${editId}`,
+                `https://time-table-scheduler-jjej.onrender.com/api/timetable/${editId}`,
                 {
 
                     method: "PUT",
@@ -174,7 +174,7 @@ form.addEventListener("submit", async (e) => {
         else {
 
             response = await fetch(
-                "http://localhost:5000/api/timetable/add",
+                "https://time-table-scheduler-jjej.onrender.com/api/timetable/add",
                 {
 
                     method: "POST",
@@ -282,7 +282,7 @@ async function loadTimetable() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/timetable"
+            "https://time-table-scheduler-jjej.onrender.com/api/timetable"
         );
 
 
@@ -502,7 +502,7 @@ async function editClass(id) {
         // Get all classes
 
         const response = await fetch(
-            "http://localhost:5000/api/timetable"
+            "https://time-table-scheduler-jjej.onrender.com/api/timetable"
         );
 
 
@@ -619,7 +619,7 @@ async function deleteClass(id) {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/timetable/${id}`,
+            `https://time-table-scheduler-jjej.onrender.com/api/timetable/${id}`,
             {
 
                 method: "DELETE"
