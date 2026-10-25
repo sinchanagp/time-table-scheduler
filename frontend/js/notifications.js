@@ -219,7 +219,7 @@ async function loadTimetable() {
 
         const response =
             await fetch(
-                "https://time-table-scheduler-jjej.onrender.com/api/timetable"
+                "http://localhost:5000/api/timetable"
             );
 
 
